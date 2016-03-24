@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Drivers">
+      <UniqueIdentifier>{f5dc49d8-c559-4fc7-b179-26c817d0149a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\DirectX11">
+      <UniqueIdentifier>{c972fdaf-d998-4e8e-a09a-5bc610c919d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\Common">
+      <UniqueIdentifier>{153f8df2-64c8-43a6-8595-103021220a88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SrwRHI.h" />
+    <ClInclude Include="Drivers\DirectX11\PlatformDefineDX11.h">
+      <Filter>Drivers\DirectX11</Filter>
+    </ClInclude>
+    <ClInclude Include="Drivers\DirectX11\SwapChainDX11.h">
+      <Filter>Drivers\DirectX11</Filter>
+    </ClInclude>
+    <ClInclude Include="Drivers\DirectX11\UtilsDx11.h">
+      <Filter>Drivers\DirectX11</Filter>
+    </ClInclude>
+    <ClInclude Include="Drivers\DirectX11\GraphicDeviceDX11.h">
+      <Filter>Drivers\DirectX11</Filter>
+    </ClInclude>
+    <ClInclude Include="Drivers\IGraphicDevice.h">
+      <Filter>Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="Drivers\Common\ARenderVindow.h">
+      <Filter>Drivers\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Drivers\Common\RenderWindowParams.h">
+      <Filter>Drivers\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Drivers\DirectX11\RenderWindowDX11.h">
+      <Filter>Drivers\DirectX11</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Drivers\DirectX11\SwapChainDX11.cpp">
+      <Filter>Drivers\DirectX11</Filter>
+    </ClCompile>
+    <ClCompile Include="Drivers\DirectX11\GraphicDeviceDX11.cpp">
+      <Filter>Drivers\DirectX11</Filter>
+    </ClCompile>
+    <ClCompile Include="Drivers\Common\RenderWindowParams.cpp">
+      <Filter>Drivers\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Drivers\DirectX11\RenderWindowDX11.cpp">
+      <Filter>Drivers\DirectX11</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
