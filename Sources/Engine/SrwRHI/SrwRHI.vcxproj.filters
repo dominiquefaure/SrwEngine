@@ -37,6 +37,9 @@
     <ClInclude Include="Drivers\DirectX11\RenderWindowDX11.h">
       <Filter>Drivers\DirectX11</Filter>
     </ClInclude>
+    <ClInclude Include="Drivers\DirectX11\HeadersDx11.h">
+      <Filter>Drivers\DirectX11</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Drivers\DirectX11\SwapChainDX11.cpp">

@@ -4,7 +4,11 @@
 #include "SrwCore.h"
 #include "AGame.h"
 
+#include "../SrwRHI/SrwRHI.h"
+
+
 using namespace SrwCore;
+using namespace SrwEngineRHI;
 
 
 namespace SrwEngine
@@ -49,6 +53,9 @@ namespace SrwEngine
 
 		// The Application that launch the Game
 		ApplicationWin32*	m_application;
+
+		// the Hw Graphic Device
+		IGraphicDevice*		m_graphicDevice;
 	};
 
 }

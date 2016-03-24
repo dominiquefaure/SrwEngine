@@ -81,6 +81,9 @@
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\SrwCore;$(DXSDK_DIR)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Lib>
+      <AdditionalDependencies>d3d11.lib;d3dx11d.lib;D3DCompiler.lib;dxerr.lib;dxgi.lib;dxguid.lib</AdditionalDependencies>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -119,6 +122,7 @@
     <ClInclude Include="Drivers\Common\ARenderVindow.h" />
     <ClInclude Include="Drivers\Common\RenderWindowParams.h" />
     <ClInclude Include="Drivers\DirectX11\GraphicDeviceDX11.h" />
+    <ClInclude Include="Drivers\DirectX11\HeadersDx11.h" />
     <ClInclude Include="Drivers\DirectX11\PlatformDefineDX11.h" />
     <ClInclude Include="Drivers\DirectX11\RenderWindowDX11.h" />
     <ClInclude Include="Drivers\DirectX11\SwapChainDX11.h" />

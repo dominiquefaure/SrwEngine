@@ -24,8 +24,8 @@ namespace SrwEngineRHI
 		inline const RenderWindowParams& GetParams();
 
 	protected:
-		ARenderWindow();
-		virtual ~ARenderWindow();
+		ARenderWindow(){}
+		virtual ~ARenderWindow(){}
 
 	protected:
 		RenderWindowParams	m_params;

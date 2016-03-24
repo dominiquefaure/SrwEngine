@@ -8,6 +8,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SrwCore", "..\Sources\Engine\SrwCore\SrwCore.vcxproj", "{9739407D-8868-4BE4-BA4B-901E2AF7C541}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SrwEngine", "..\Sources\Engine\SrwEngine\SrwEngine.vcxproj", "{915B8E2C-D94E-4D2A-BDD9-92A383A3E86D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A34B3B79-6978-4643-BEE5-9E9502350712} = {A34B3B79-6978-4643-BEE5-9E9502350712}
+		{9739407D-8868-4BE4-BA4B-901E2AF7C541} = {9739407D-8868-4BE4-BA4B-901E2AF7C541}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SrwRHI", "..\Sources\Engine\SrwRHI\SrwRHI.vcxproj", "{A34B3B79-6978-4643-BEE5-9E9502350712}"
 EndProject

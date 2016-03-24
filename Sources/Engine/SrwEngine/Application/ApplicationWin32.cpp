@@ -1,5 +1,6 @@
 #include "ApplicationWin32.h"
 
+#include "../GameManager/GameManager.h"
 
 // Callback that will be Called to Handle Windows Messages
 LRESULT CALLBACK AppWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
@@ -102,12 +103,9 @@ namespace SrwEngine
 			{
 				if( m_isInitialized )
 				{
-	/*				
-					if(! Frame() )
-					{
-						break;
-					}
-	*/			}
+					// Perform a Frame
+					GameManager::GetInstance()->Frame();
+				}
 			}
 		}
 
@@ -212,11 +210,14 @@ namespace SrwEngine
 	//---------------------------------------------------------------------------------------------------
 	void ApplicationWin32::InitGameManager( AGame* a_game )
 	{
+		// Create the Game Manager
+		GameManager::CreateInstance();
 
+		GameManager::GetInstance()->SetApplication( this );
+		GameManager::GetInstance()->SetGame( a_game );
 
-		m_game												=	a_game;
-		// Perform Game custom initializations
-		m_game->OnInit();
+		GameManager::GetInstance()->OnInit( );
+
 	}
 	//---------------------------------------------------------------------------------------------------
 }

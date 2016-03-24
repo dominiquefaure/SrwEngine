@@ -29,7 +29,7 @@ namespace SrwCore
 		//------------------------------------------------------------
 
 		//------------------------------------------------------------
-		static inline T& GetInstance()
+		static inline T* GetInstance()
 		{
 			return s_instance;
 		}
