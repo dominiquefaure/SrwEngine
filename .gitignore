@@ -1,0 +1,31 @@
+; VS files
+*.user
+*.ncb
+*.suo
+*.user
+*.aps
+*.pdb
+*.obj
+*.idb
+*.pch
+*.opensdf
+*.opendb
+*.sdf
+*.vspscc
+*.VC.db
+*.tlog
+*.log
+*.ilk
+
+; cache files
+scc.cache
+
+; Application files
+*.exe
+*.dll
+*.obj
+*.lib
+
+; build log
+BuildLog.htm
+Build\*
