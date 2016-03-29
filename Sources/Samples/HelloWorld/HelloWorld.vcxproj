@@ -74,6 +74,10 @@
     <IncludePath>..\..\Engine\SrwEngine;..\..\Engine\SrwCore;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\Build\Libs\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\Build\Samples\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Build\Intermediate\$(Configuration)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -89,7 +93,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\Engine\SrwEngine;..\..\Engine\SrwCore</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Build\Libs\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SrwEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
